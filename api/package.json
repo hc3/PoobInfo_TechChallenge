@@ -1,0 +1,41 @@
+{
+  "name": "api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "./node_modules/.bin/babel-node --presets es2015 index.js",
+    "start-dev": "nodemon --exec babel-node index.js",
+    "testOn": "mocha --timeout 1000000 --opts src/modules/tdd/mocha.opts src/modules/tdd/AllTest.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-register": "^6.26.0",
+    "chai": "^4.1.1",
+    "mocha": "^3.5.0",
+    "supertest": "^3.0.0"
+  },
+  "dependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-preset-es2015": "^6.24.1",
+    "bcrypt": "^1.0.2",
+    "bluebird": "^3.5.0",
+    "cloudinary": "^1.9.1",
+    "dotenv": "^6.0.0",
+    "handlebars": "^4.0.11",
+    "hapi": "^16.5.2",
+    "hapi-auth-basic": "^4.2.0",
+    "hapi-auth-cookie": "^7.0.0",
+    "hapi-auth-jwt": "^4.0.0",
+    "hapi-authorization": "^3.0.3",
+    "inert": "^4.2.0",
+    "jwt-simple": "^0.5.1",
+    "mongoose": "^4.8.7",
+    "nodemailer": "^4.6.7",
+    "socket.io": "^2.0.4",
+    "vision": "^5.3.1"
+  }
+}
